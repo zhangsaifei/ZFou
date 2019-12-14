@@ -6,8 +6,8 @@
       </el-header>
       <el-container>
         <el-main>
-          <Navigation/>
-          
+          <DocumentDetails/>
+          <ProductList/>
         </el-main>
       </el-container>
       <el-footer>
@@ -20,18 +20,21 @@
 <script>
 // import DocumentDetails from './components/DocumentDetails'
 // import Paging from './components/Paging'
-import Navigation from './components/Navigation'
+// import Navigation from './components/Navigation'
+import DocumentDetails from './components/DocumentDetails'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ProductList from './components/list/ProductList'
 
 export default {
   name: 'app',
   components: {
-    // DocumentDetails,
+    DocumentDetails,
     // Paging,
-    Navigation,
+    // Navigation,
     Header,
-    Footer
+    Footer,
+    ProductList
   }
 }
 </script>
